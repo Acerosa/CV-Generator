@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <form method="POST">
+                {% csrf_token %}
+            <div class="form-group">
+                <label><b>Name</b></label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label><b>Email</b></label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label><b>Phone</b></label>
+                <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="Enter your phone number" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label>About you</label>
+                <textarea class="form-control" id="summary" aria-describedby="summaryHelp" placeholder="Enter write your summary here" name="Summary"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label><b>Degree</b></label>
+                <input type="text" class="form-control" id="degree" aria-describedby="degreelHelp" placeholder="Enter your degree" name="degree">
+            </div>
+
+            <div class="form-group">
+                <label><b>School</b></label>
+                <input type="text" class="form-control" id="school" aria-describedby="schoolHelp" placeholder="Enter the school you attended" name="school">
+            </div>
+
+            <div class="form-group">
+                <label><b>University</b></label>
+                <input type="text" class="form-control" id="university" aria-describedby="universityHelp" placeholder="Enter enter the university you have attended" name="university">
+            </div>
+
+            <div class="form-group">
+                <label><b>Previous work</b></label>
+                <textarea class="form-control" id="previous_work" aria-describedby="previous_workHelp" placeholder="Enter your previous_work" name="previous_work"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label><b>Skills</b></label>
+                <textarea class="form-control" id="skills" aria-describedby="skills" placeholder="Enter your skills" name="skills"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
